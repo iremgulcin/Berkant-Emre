@@ -66,7 +66,3 @@ The features are the pixel values of the MRI images, and the target is the tumor
 The dataset may contain biases due to the diversity of imaging equipment and patient demographics. There are risks of misclassification, which could impact medical diagnosis. Limitations include the need for further validation in clinical settings.
 
 
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the dataset, the APA and Bibtex information for that should go in this section. -->
-
