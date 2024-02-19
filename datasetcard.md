@@ -28,10 +28,6 @@ Source 1 : https://figshare.com/articles/dataset/brain_tumor_dataset/1512427
 
 Source 2: https://www.kaggle.com/datasets/davidbroberts/brain-tumor-object-detection-datasets/data
 
-- **Repository:** {{ repo | default("[More Information Needed]", true)}}
-- **Paper [optional]:** {{ paper | default("[More Information Needed]", true)}}
-- **Demo [optional]:** {{ demo | default("[More Information Needed]", true)}}
-
 ## Uses
 
 <!-- Address questions around how the dataset is intended to be used. -->
