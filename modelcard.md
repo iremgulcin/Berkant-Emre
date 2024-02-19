@@ -95,7 +95,6 @@ For ResNet50 model: 45 minutes and for YOLOv5 model: 1.5 hours using Google Cola
 The model was evaluated on a separate test set of 1,000 MRI images.
 
 
-
 #### Testing Data
 
 <!-- This should link to a Dataset Card if possible. -->
@@ -120,10 +119,6 @@ The model achieved an accuracy of 95% on the test set, with precision and recall
 
 The brain tumor detection model demonstrates high accuracy in classifying and localizing tumors in MRI images. It shows promise for assisting in medical diagnosis and research.
 
-## Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
 
 
 ## Technical Specifications [optional]
@@ -132,29 +127,9 @@ The brain tumor detection model demonstrates high accuracy in classifying and lo
 
 The model combines ResNet50 for classification and YOLOv5 for localization, utilizing transfer learning and fine-tuning techniques.
 
-### Compute Infrastructure
-
-{{ compute_infrastructure | default("[More Information Needed]", true)}}
-
-#### Hardware
-
-{{ hardware_requirements | default("[More Information Needed]", true)}}
-
 #### Software
 
 The model requires Python 3.x, TensorFlow, PyTorch, and other dependencies listed in the repository's requirements file.
-
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
-
-
-## Glossary [optional]
-
-<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-## More Information [optional]
-
 
 
 
