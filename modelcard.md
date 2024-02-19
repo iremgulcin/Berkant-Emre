@@ -56,9 +56,7 @@ Users, both direct and downstream, should be made aware of the risks, biases, an
 
 ## How to Get Started with the Model
 
-Use the code below to get started with the model.
-
-{{ get_started_code | default("[More Information Needed]", true)}}
+Use the provided .ipynb files to implement the respective models for tumor detection and classification.  
 
 ## Training Details
 
