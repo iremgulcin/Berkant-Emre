@@ -2,26 +2,31 @@
 # Dataset Card
 ---
 
-# Dataset Card for {{ pretty_name | default("Dataset Name", true) }}
+# Dataset Card for Brain Tumor MRI Dataset
 
 <!-- Provide a quick summary of the dataset. -->
+Dataset Summary:
+A dataset consisting of MRI images of brain tumors, including meningioma, glioma, pituitary tumors, and no tumor cases.
 
-{{ dataset_summary | default("", true) }}
 
 ## Dataset Details
 
 ### Dataset Description
 
 <!-- Provide a longer summary of what this dataset is. -->
+This dataset contains 7,000 MRI images of brain tumors, categorized into four types: meningioma, glioma, pituitary, and no tumor. The images are used for training and evaluating machine learning models for tumor detection and classification.
 
-{{ dataset_description | default("", true) }}
 
-- **Curated by:** {{ curators | default("[More Information Needed]", true)}}
-- **License:** {{ license | default("[More Information Needed]", true)}}
+- **Curated by:** Berkant ARTAN / Emre Can Şen
+- **License:** https://figshare.com/articles/dataset/brain_tumor_dataset/1512427
 
 ### Dataset Sources [optional]
 
 <!-- Provide the basic links for the dataset. -->
+Source 1 : https://figshare.com/articles/dataset/brain_tumor_dataset/1512427
+
+
+Source 2: https://www.kaggle.com/datasets/davidbroberts/brain-tumor-object-detection-datasets/data
 
 - **Repository:** {{ repo | default("[More Information Needed]", true)}}
 - **Paper [optional]:** {{ paper | default("[More Information Needed]", true)}}
@@ -34,15 +39,13 @@
 ### Direct Use
 
 <!-- This section describes suitable use cases for the dataset. -->
-
-{{ direct_use | default("[More Information Needed]", true)}}
+This dataset is directly used for training and evaluating machine learning models, specifically ResNet50 for classification and YOLOv5 for localization of brain tumors in MRI images.
 
 
 ## Dataset Structure
 
 <!-- This section provides a description of the dataset fields, and additional information about the dataset structure such as criteria used to create the splits, relationships between data points, etc. -->
-
-{{ dataset_structure | default("[More Information Needed]", true)}}
+The dataset is structured into four folders, each corresponding to a tumor type. Each folder contains MRI images in DICOM or JPEG format.
 
 ## Dataset Creation
 
@@ -52,13 +55,12 @@
 
 #### Data Collection and Processing
 
-<!-- This section describes the data collection and processing process such as data selection criteria, filtering and normalization methods, tools and libraries used, etc. -->
-
-{{ data_collection_and_processing_section | default("[More Information Needed]", true)}}
+The images were preprocessed to standardize their size and format. Data augmentation techniques were applied to increase the dataset's diversity.
 
 #### Features and the target
 
 <!-- This section describes the features of the dataset and the target of the project -->
+The features are the pixel values of the MRI images, and the target is the tumor type + tumor location.
 
 ### Annotations [optional]
 
@@ -68,20 +70,16 @@
 
 <!-- This section describes the annotation process such as annotation tools used in the process, the amount of data annotated, annotation guidelines provided to the annotators, interannotator statistics, annotation validation, etc. -->
 
-{{ annotation_process_section | default("[More Information Needed]", true)}}
-
 #### Who are the annotators?
 
 <!-- This section describes the people or systems who created the annotations. -->
-
-{{ who_are_annotators_section | default("[More Information Needed]", true)}}
 
 
 ## Bias, Risks, and Limitations
 
 <!-- This section is meant to convey both technical and sociotechnical limitations. -->
 
-{{ bias_risks_limitations | default("[More Information Needed]", true)}}
+The dataset may contain biases due to the diversity of imaging equipment and patient demographics. There are risks of misclassification, which could impact medical diagnosis. Limitations include the need for further validation in clinical settings.
 
 
 ## Citation [optional]
