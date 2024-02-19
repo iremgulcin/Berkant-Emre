@@ -58,18 +58,6 @@ The images were preprocessed to standardize their size and format. Data augmenta
 <!-- This section describes the features of the dataset and the target of the project -->
 The features are the pixel values of the MRI images, and the target is the tumor type + tumor location.
 
-### Annotations [optional]
-
-<!-- If the dataset contains annotations which are not part of the initial data collection, use this section to describe them. -->
-
-#### Annotation process
-
-<!-- This section describes the annotation process such as annotation tools used in the process, the amount of data annotated, annotation guidelines provided to the annotators, interannotator statistics, annotation validation, etc. -->
-
-#### Who are the annotators?
-
-<!-- This section describes the people or systems who created the annotations. -->
-
 
 ## Bias, Risks, and Limitations
 
